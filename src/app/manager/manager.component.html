@@ -1,0 +1,14 @@
+<mat-toolbar color="accent">
+
+  <a mat-button [routerLink]="'/manager/home'" routerLinkActive="active-link">Manager's Dashboard</a>
+  <a mat-button [routerLink]="'/manager/users'" routerLinkActive="active-link">User Management</a>
+  <a mat-button [routerLink]="'/manager/receipts'" routerLinkActive="active-link">Receipts Lookup</a>
+  <span class="flex-spacer"></span>
+  <button [routerLink]="'/inventory'" mat-mini-fab matTooltip="Inventory" >
+    <mat-icon>list</mat-icon>
+  </button>
+  <button [routerLink]="'/pos'" mat-mini-fab matTooltip="POS" >
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
+</mat-toolbar>
+<router-outlet></router-outlet>
